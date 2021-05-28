@@ -1,0 +1,23 @@
+{
+	"manifest_version":2,
+	"name":"Youtube SpeedControl",
+	"version":"1.0",
+	"description":"Adds more speed options to youtube videos.",
+	"browser_action":{
+		"default_icon":{
+			"16":"Icons/Icone32.png"
+		}
+	},
+	"content_scripts":[{
+		"js":["SpeedControl.js"],
+		"matches":["*://www.youtube.com/watch*"],
+		"run_at":"document_end"
+	}],
+	"icons":{
+		"16":"Icons/Icone16.png",
+		"32":"Icons/Icone32.png",
+		"48":"Icons/Icone48.png",
+		"128":"Icons/Icone128.png"
+	},
+	"permissions":["tabs"]
+}
