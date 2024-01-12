@@ -20,5 +20,10 @@
 		"js": ["SpeedControl.js"],
 		"run_at": "document_end"
 	}],
-	"permissions": ["tabs"]
+	"permissions": ["tabs"],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "vo@gareptul.ae"
+		}
+	}
 }
